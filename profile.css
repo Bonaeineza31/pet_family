@@ -1,50 +1,104 @@
-body{
-    background-color: pink;
-    margin: 40px;
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #FFD1DC, #FFFFFF);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-h1{
-    font-size: 50px;
-}
-#name{
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:cornflowerblue;
-}
-.bio{
-    background-color: #ffff00;
-    padding-left:20px ;
-
-}
-.text{
-    color:red;
-    font-size: 40px;
-}
-#unique{
-    color: blue;
-    font-weight: bold;
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-img{
-    border-radius: 7%;
-    background-color: white;
-    padding: 1%;
- 
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
 }
 
-img:hover{
-   
-        background-color: red;
-    
-}
-
-button{
+nav ul li {
     cursor: pointer;
-    width: 100px;
-    background-color: blue;
+    color: #4A90E2;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    color: #FF6B6B;
+}
+
+.profile-container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #FFD1DC;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+#name {
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+.bio {
+    background-color: #FFF5E6;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.text {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.profile-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: #F0F4F8;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.detail-item {
+    text-align: center;
+}
+
+button {
+    background-color: #FF6B6B;
     color: white;
-    font-weight: bold;
-    &:hover{
-        background-color: red;
-    }
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4A90E2;
+    transform: translateY(-3px);
 }
